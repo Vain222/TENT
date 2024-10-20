@@ -1,0 +1,184 @@
+[24/10/20 15:24:07] [conf.py:  209]: PyTorch Version: torch=1.9.0+cu111, cuda=11.1, cudnn=8005
+[24/10/20 15:24:07] [conf.py:  211]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: ./ckpt
+CORRUPTION:
+  DATASET: cifar10
+  NUM_EX: 10000
+  SEVERITY: [5, 4, 3, 2, 1]
+  TYPE: ['gaussian_noise', 'shot_noise', 'impulse_noise', 'defocus_blur', 'glass_blur', 'motion_blur', 'zoom_blur', 'snow', 'frost', 'fog', 'brightness', 'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: ./data
+DESC: 
+LOG_DEST: eata_241020_152407.txt
+LOG_TIME: 241020_152407
+MODEL:
+  ADAPTATION: eata
+  ARCH: Standard
+  EPISODIC: False
+OPTIM:
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.00025
+  METHOD: SGD
+  MOMENTUM: 0.9
+  NESTEROV: True
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 1
+SAVE_DIR: ./output
+TEST:
+  BATCH_SIZE: 128
+[24/10/20 15:24:14] [cifar10c.py:   39]: test-time adaptation: EATA
+[24/10/20 15:24:14] [cifar10c.py:   48]: resetting model
+[24/10/20 15:24:54] [cifar10c.py:   68]: error % [gaussian_noise5]: 28.12%
+[24/10/20 15:24:54] [cifar10c.py:   48]: resetting model
+[24/10/20 15:29:10] [cifar10c.py:   68]: error % [shot_noise5]: 26.38%
+[24/10/20 15:29:10] [cifar10c.py:   48]: resetting model
+[24/10/20 15:33:30] [cifar10c.py:   68]: error % [impulse_noise5]: 36.50%
+[24/10/20 15:33:30] [cifar10c.py:   48]: resetting model
+[24/10/20 15:37:52] [cifar10c.py:   68]: error % [defocus_blur5]: 12.79%
+[24/10/20 15:37:52] [cifar10c.py:   48]: resetting model
+[24/10/20 15:42:14] [cifar10c.py:   68]: error % [glass_blur5]: 35.53%
+[24/10/20 15:42:14] [cifar10c.py:   48]: resetting model
+[24/10/20 15:46:34] [cifar10c.py:   68]: error % [motion_blur5]: 14.21%
+[24/10/20 15:46:34] [cifar10c.py:   48]: resetting model
+[24/10/20 15:50:55] [cifar10c.py:   68]: error % [zoom_blur5]: 12.28%
+[24/10/20 15:50:55] [cifar10c.py:   48]: resetting model
+[24/10/20 15:55:16] [cifar10c.py:   68]: error % [snow5]: 17.42%
+[24/10/20 15:55:16] [cifar10c.py:   48]: resetting model
+[24/10/20 15:59:38] [cifar10c.py:   68]: error % [frost5]: 17.68%
+[24/10/20 15:59:38] [cifar10c.py:   48]: resetting model
+[24/10/20 16:03:58] [cifar10c.py:   68]: error % [fog5]: 15.33%
+[24/10/20 16:03:58] [cifar10c.py:   48]: resetting model
+[24/10/20 16:08:19] [cifar10c.py:   68]: error % [brightness5]: 8.41%
+[24/10/20 16:08:19] [cifar10c.py:   48]: resetting model
+[24/10/20 16:12:39] [cifar10c.py:   68]: error % [contrast5]: 13.31%
+[24/10/20 16:12:39] [cifar10c.py:   48]: resetting model
+[24/10/20 16:16:59] [cifar10c.py:   68]: error % [elastic_transform5]: 23.69%
+[24/10/20 16:16:59] [cifar10c.py:   48]: resetting model
+[24/10/20 16:21:20] [cifar10c.py:   68]: error % [pixelate5]: 19.98%
+[24/10/20 16:21:20] [cifar10c.py:   48]: resetting model
+[24/10/20 16:25:41] [cifar10c.py:   68]: error % [jpeg_compression5]: 27.50%
+[24/10/20 16:25:41] [cifar10c.py:   48]: resetting model
+[24/10/20 16:30:02] [cifar10c.py:   68]: error % [gaussian_noise4]: 25.17%
+[24/10/20 16:30:02] [cifar10c.py:   48]: resetting model
+[24/10/20 16:34:22] [cifar10c.py:   68]: error % [shot_noise4]: 21.34%
+[24/10/20 16:34:22] [cifar10c.py:   48]: resetting model
+[24/10/20 16:38:42] [cifar10c.py:   68]: error % [impulse_noise4]: 29.60%
+[24/10/20 16:38:42] [cifar10c.py:   48]: resetting model
+[24/10/20 16:43:02] [cifar10c.py:   68]: error % [defocus_blur4]: 8.92%
+[24/10/20 16:43:02] [cifar10c.py:   48]: resetting model
+[24/10/20 16:47:23] [cifar10c.py:   68]: error % [glass_blur4]: 34.64%
+[24/10/20 16:47:23] [cifar10c.py:   48]: resetting model
+[24/10/20 16:51:42] [cifar10c.py:   68]: error % [motion_blur4]: 11.72%
+[24/10/20 16:51:42] [cifar10c.py:   48]: resetting model
+[24/10/20 16:56:02] [cifar10c.py:   68]: error % [zoom_blur4]: 9.89%
+[24/10/20 16:56:02] [cifar10c.py:   48]: resetting model
+[24/10/20 17:00:23] [cifar10c.py:   68]: error % [snow4]: 16.49%
+[24/10/20 17:00:23] [cifar10c.py:   48]: resetting model
+[24/10/20 17:04:42] [cifar10c.py:   68]: error % [frost4]: 14.61%
+[24/10/20 17:04:42] [cifar10c.py:   48]: resetting model
+[24/10/20 17:09:03] [cifar10c.py:   68]: error % [fog4]: 8.97%
+[24/10/20 17:09:03] [cifar10c.py:   48]: resetting model
+[24/10/20 17:13:23] [cifar10c.py:   68]: error % [brightness4]: 7.04%
+[24/10/20 17:13:23] [cifar10c.py:   48]: resetting model
+[24/10/20 17:17:43] [cifar10c.py:   68]: error % [contrast4]: 9.04%
+[24/10/20 17:17:43] [cifar10c.py:   48]: resetting model
+[24/10/20 17:22:02] [cifar10c.py:   68]: error % [elastic_transform4]: 15.67%
+[24/10/20 17:22:02] [cifar10c.py:   48]: resetting model
+[24/10/20 17:26:22] [cifar10c.py:   68]: error % [pixelate4]: 14.10%
+[24/10/20 17:26:22] [cifar10c.py:   48]: resetting model
+[24/10/20 17:30:42] [cifar10c.py:   68]: error % [jpeg_compression4]: 24.04%
+[24/10/20 17:30:42] [cifar10c.py:   48]: resetting model
+[24/10/20 17:35:02] [cifar10c.py:   68]: error % [gaussian_noise3]: 22.26%
+[24/10/20 17:35:02] [cifar10c.py:   48]: resetting model
+[24/10/20 17:39:22] [cifar10c.py:   68]: error % [shot_noise3]: 19.12%
+[24/10/20 17:39:22] [cifar10c.py:   48]: resetting model
+[24/10/20 17:43:42] [cifar10c.py:   68]: error % [impulse_noise3]: 20.90%
+[24/10/20 17:43:42] [cifar10c.py:   48]: resetting model
+[24/10/20 17:48:02] [cifar10c.py:   68]: error % [defocus_blur3]: 7.06%
+[24/10/20 17:48:02] [cifar10c.py:   48]: resetting model
+[24/10/20 17:52:23] [cifar10c.py:   68]: error % [glass_blur3]: 24.30%
+[24/10/20 17:52:23] [cifar10c.py:   48]: resetting model
+[24/10/20 17:56:42] [cifar10c.py:   68]: error % [motion_blur3]: 11.64%
+[24/10/20 17:56:42] [cifar10c.py:   48]: resetting model
+[24/10/20 18:01:03] [cifar10c.py:   68]: error % [zoom_blur3]: 8.86%
+[24/10/20 18:01:03] [cifar10c.py:   48]: resetting model
+[24/10/20 18:05:23] [cifar10c.py:   68]: error % [snow3]: 13.90%
+[24/10/20 18:05:23] [cifar10c.py:   48]: resetting model
+[24/10/20 18:09:43] [cifar10c.py:   68]: error % [frost3]: 14.20%
+[24/10/20 18:09:43] [cifar10c.py:   48]: resetting model
+[24/10/20 18:14:02] [cifar10c.py:   68]: error % [fog3]: 7.35%
+[24/10/20 18:14:02] [cifar10c.py:   48]: resetting model
+[24/10/20 18:18:23] [cifar10c.py:   68]: error % [brightness3]: 6.54%
+[24/10/20 18:18:23] [cifar10c.py:   48]: resetting model
+[24/10/20 18:22:44] [cifar10c.py:   68]: error % [contrast3]: 7.79%
+[24/10/20 18:22:44] [cifar10c.py:   48]: resetting model
+[24/10/20 18:27:04] [cifar10c.py:   68]: error % [elastic_transform3]: 10.08%
+[24/10/20 18:27:04] [cifar10c.py:   48]: resetting model
+[24/10/20 18:31:24] [cifar10c.py:   68]: error % [pixelate3]: 10.33%
+[24/10/20 18:31:24] [cifar10c.py:   48]: resetting model
+[24/10/20 18:35:44] [cifar10c.py:   68]: error % [jpeg_compression3]: 20.95%
+[24/10/20 18:35:44] [cifar10c.py:   48]: resetting model
+[24/10/20 18:40:03] [cifar10c.py:   68]: error % [gaussian_noise2]: 17.11%
+[24/10/20 18:40:03] [cifar10c.py:   48]: resetting model
+[24/10/20 18:44:23] [cifar10c.py:   68]: error % [shot_noise2]: 12.43%
+[24/10/20 18:44:23] [cifar10c.py:   48]: resetting model
+[24/10/20 18:48:44] [cifar10c.py:   68]: error % [impulse_noise2]: 15.93%
+[24/10/20 18:48:44] [cifar10c.py:   48]: resetting model
+[24/10/20 18:53:04] [cifar10c.py:   68]: error % [defocus_blur2]: 6.26%
+[24/10/20 18:53:04] [cifar10c.py:   48]: resetting model
+[24/10/20 18:57:23] [cifar10c.py:   68]: error % [glass_blur2]: 24.42%
+[24/10/20 18:57:23] [cifar10c.py:   48]: resetting model
+[24/10/20 19:01:44] [cifar10c.py:   68]: error % [motion_blur2]: 9.60%
+[24/10/20 19:01:44] [cifar10c.py:   48]: resetting model
+[24/10/20 19:06:04] [cifar10c.py:   68]: error % [zoom_blur2]: 7.91%
+[24/10/20 19:06:04] [cifar10c.py:   48]: resetting model
+[24/10/20 19:10:24] [cifar10c.py:   68]: error % [snow2]: 14.51%
+[24/10/20 19:10:24] [cifar10c.py:   48]: resetting model
+[24/10/20 19:14:43] [cifar10c.py:   68]: error % [frost2]: 11.22%
+[24/10/20 19:14:43] [cifar10c.py:   48]: resetting model
+[24/10/20 19:19:04] [cifar10c.py:   68]: error % [fog2]: 6.51%
+[24/10/20 19:19:04] [cifar10c.py:   48]: resetting model
+[24/10/20 19:23:24] [cifar10c.py:   68]: error % [brightness2]: 6.25%
+[24/10/20 19:23:24] [cifar10c.py:   48]: resetting model
+[24/10/20 19:27:43] [cifar10c.py:   68]: error % [contrast2]: 7.15%
+[24/10/20 19:27:43] [cifar10c.py:   48]: resetting model
+[24/10/20 19:32:03] [cifar10c.py:   68]: error % [elastic_transform2]: 8.99%
+[24/10/20 19:32:03] [cifar10c.py:   48]: resetting model
+[24/10/20 19:36:24] [cifar10c.py:   68]: error % [pixelate2]: 9.17%
+[24/10/20 19:36:24] [cifar10c.py:   48]: resetting model
+[24/10/20 19:40:44] [cifar10c.py:   68]: error % [jpeg_compression2]: 19.53%
+[24/10/20 19:40:44] [cifar10c.py:   48]: resetting model
+[24/10/20 19:45:04] [cifar10c.py:   68]: error % [gaussian_noise1]: 11.83%
+[24/10/20 19:45:04] [cifar10c.py:   48]: resetting model
+[24/10/20 19:49:23] [cifar10c.py:   68]: error % [shot_noise1]: 9.88%
+[24/10/20 19:49:23] [cifar10c.py:   48]: resetting model
+[24/10/20 19:53:44] [cifar10c.py:   68]: error % [impulse_noise1]: 11.16%
+[24/10/20 19:53:44] [cifar10c.py:   48]: resetting model
+[24/10/20 19:58:04] [cifar10c.py:   68]: error % [defocus_blur1]: 6.08%
+[24/10/20 19:58:04] [cifar10c.py:   48]: resetting model
+[24/10/20 20:02:24] [cifar10c.py:   68]: error % [glass_blur1]: 24.08%
+[24/10/20 20:02:24] [cifar10c.py:   48]: resetting model
+[24/10/20 20:06:43] [cifar10c.py:   68]: error % [motion_blur1]: 7.94%
+[24/10/20 20:06:43] [cifar10c.py:   48]: resetting model
+[24/10/20 20:11:03] [cifar10c.py:   68]: error % [zoom_blur1]: 8.04%
+[24/10/20 20:11:03] [cifar10c.py:   48]: resetting model
+[24/10/20 20:15:24] [cifar10c.py:   68]: error % [snow1]: 9.53%
+[24/10/20 20:15:24] [cifar10c.py:   48]: resetting model
+[24/10/20 20:19:43] [cifar10c.py:   68]: error % [frost1]: 8.40%
+[24/10/20 20:19:43] [cifar10c.py:   48]: resetting model
+[24/10/20 20:24:04] [cifar10c.py:   68]: error % [fog1]: 6.02%
+[24/10/20 20:24:04] [cifar10c.py:   48]: resetting model
+[24/10/20 20:28:23] [cifar10c.py:   68]: error % [brightness1]: 6.03%
+[24/10/20 20:28:23] [cifar10c.py:   48]: resetting model
+[24/10/20 20:32:43] [cifar10c.py:   68]: error % [contrast1]: 6.35%
+[24/10/20 20:32:43] [cifar10c.py:   48]: resetting model
+[24/10/20 20:37:04] [cifar10c.py:   68]: error % [elastic_transform1]: 9.25%
+[24/10/20 20:37:04] [cifar10c.py:   48]: resetting model
+[24/10/20 20:41:23] [cifar10c.py:   68]: error % [pixelate1]: 8.02%
+[24/10/20 20:41:23] [cifar10c.py:   48]: resetting model
+[24/10/20 20:45:43] [cifar10c.py:   68]: error % [jpeg_compression1]: 13.49%

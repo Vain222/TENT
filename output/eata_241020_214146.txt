@@ -1,0 +1,37 @@
+[24/10/20 21:41:46] [conf.py:  209]: PyTorch Version: torch=1.9.0+cu111, cuda=11.1, cudnn=8005
+[24/10/20 21:41:46] [conf.py:  211]: BN:
+  EPS: 1e-05
+  MOM: 0.1
+CKPT_DIR: ./ckpt
+CORRUPTION:
+  DATASET: cifar10
+  NUM_EX: 10000
+  SEVERITY: [5, 4, 3, 2, 1]
+  TYPE: ['gaussian_noise', 'shot_noise', 'impulse_noise', 'defocus_blur', 'glass_blur', 'motion_blur', 'zoom_blur', 'snow', 'frost', 'fog', 'brightness', 'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression']
+CUDNN:
+  BENCHMARK: True
+DATA_DIR: ./data
+DESC: 
+LOG_DEST: eata_241020_214146.txt
+LOG_TIME: 241020_214146
+MODEL:
+  ADAPTATION: eata
+  ARCH: Standard
+  EPISODIC: False
+OPTIM:
+  BETA: 0.9
+  DAMPENING: 0.0
+  LR: 0.001
+  METHOD: Adam
+  MOMENTUM: 0.9
+  NESTEROV: True
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 1
+SAVE_DIR: ./output
+TEST:
+  BATCH_SIZE: 64
+[24/10/20 21:41:54] [cifar10c.py:   39]: test-time adaptation: EATA
+[24/10/20 21:41:54] [cifar10c.py:   48]: resetting model
+[24/10/20 21:42:30] [cifar10c.py:   68]: error % [gaussian_noise5]: 28.33%
+[24/10/20 21:42:30] [cifar10c.py:   48]: resetting model

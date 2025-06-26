@@ -2,11 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=https://vain222.github.io/TENT/?timestamp=1690000000">
   <script>
-    // JavaScript 重定向（备选方案，兼容不支持 meta refresh 的浏览器）
-    const timestamp = new Date().getTime();
-    window.location.href = `https://vain222.github.io/TENT/?timestamp=${timestamp}`;
+    // 获取当前 URL
+    const currentUrl = window.location.href;
+    // 定义正确的大写 URL
+    const correctUrl = 'https://vain222.github.io/TENT/';
+    // 检查当前 URL 是否包含小写的 tent
+    if (currentUrl.includes('tent')) {
+      // 替换为大写的 TENT
+      const newUrl = currentUrl.replace('tent', 'TENT');
+      // 重定向到正确的 URL
+      window.location.href = newUrl;
+    } else {
+      // 如果不是小写 tent 相关问题，重定向到默认页面
+      window.location.href = correctUrl;
+    }
   </script>
 </head>
 <body>
